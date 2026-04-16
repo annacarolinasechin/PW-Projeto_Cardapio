@@ -1,0 +1,160 @@
+* {
+    scroll-behavior: smooth;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    width: 100%;
+    background-color: #714216;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+}
+
+.nav-lista li {
+    display: inline-flex;
+    list-style: none;
+    padding-inline: 20px;
+    justify-content: center;
+    text-align: center;
+}
+
+
+a {
+    text-decoration: none;
+    color: beige;
+}
+
+a:hover{
+    font-weight: bold; 
+}
+
+.brasil:hover,
+.japao:hover,
+.italia:hover,
+.angola:hover,
+.india:hover,
+.mexico:hover 
+{
+    transform: scale(1.01); /* multiplica o tamanho da section pelo fator dado, aumentando desde o centro sem afetar o layout */
+}
+
+:target {
+  scroll-margin-top: 110px;
+}
+
+h1 {
+    color: #714216;
+    font-size: 70px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+h2 {
+    color: beige;
+    font-size: 32px;
+    margin-bottom: 5px; /*determina espaçamento quanto ao elemento de baixo*/
+    margin-top: 0px;
+}
+
+.subtitulo {
+    color: #714216;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 0;
+}
+
+
+p {
+    color: beige;
+    font-size: 16px;
+    margin-bottom: 10px; /*determina espaçamento quanto ao elemento de baixo*/
+    margin-top: 0;
+    padding-bottom: 5px;
+}
+
+body {
+    background-color: antiquewhite;
+    margin: 0;
+    padding-top: 70px; /* mesma altura do header */
+}
+
+
+img {
+    width: 290px;
+    height: 290px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #54281C;
+}
+
+section {
+    display: inline-flex;
+    align-items: center;
+    gap: 20px; /*estabele espaçamento entre linhas e colunas*/
+    margin: 20px auto; /*define o espaçamento entre cada uma das sections*/
+    width: 70%;
+    margin-left: 15%;
+    padding: 20px; /*define espaçamento interno (conteúdo/borda)*/
+    border-radius: 20px;
+}
+
+.descriçoes li {
+    list-style: none;
+    margin-top: 0;
+    padding-left: 1px; /*espaçamento entre imagem e texto (da esquerda para direita)*/
+}
+
+
+li {
+    list-style-image: url('../assets/Icon.png'); 
+    list-style-position: inside; 
+    color:antiquewhite;
+    padding: 2px; /*espaçamento entre cada uma das linhas*/
+    font-size: 20px;
+    text-align: left;
+}
+
+.conteudo { /*determina que tudo dentro da classe (<img>, <h2>, <p> e <ul>/<li>) fiquem centralizados*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+}
+
+.brasil {
+    background-color: #C99D24;
+}
+
+.japao { 
+    background-color: #714216;
+}
+.italia { 
+    background-color: #d17a8e;
+ }
+.angola { 
+    background-color: #D96704;
+}
+.india { 
+    background-color: #40271E;
+}
+.mexico { 
+    background-color: #667302;
+}
+
+footer {
+    text-align: center;
+    font-size: 10px;
+    padding: 10px;
+    margin-bottom: 0;
+}
+
+footer p {
+    color: #714216;
+    margin: 0;
+}
