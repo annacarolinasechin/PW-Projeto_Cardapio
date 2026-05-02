@@ -110,7 +110,7 @@ section {
 
 
 li {
-    list-style-image: url('../assets/Icon.png'); 
+    list-style-image: url('/src/assets/Icon.png'); 
     list-style-position: inside; 
     color:antiquewhite;
     padding: 2px; /*espaçamento entre cada uma das linhas*/
